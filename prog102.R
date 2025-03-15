@@ -98,7 +98,7 @@ extract_temp<- function(site, start, end) {
                      kefj_datetime >= start_alaska &
                      kefj_datetime <= end_alaska
   day_temperature <- kefj_temperature[extract_idx]
-  return(result)
+  return(day_temperature)
 }
 extract_temp ("Harris","2016-04-05 00:00", "2016-04-05 23:59")
 
@@ -114,7 +114,7 @@ extract_datetime<- function(site, start, end) {
     kefj_datetime >= start_alaska &
     kefj_datetime <= end_alaska
   day_temperature <- kefj_datetime[extract_idx]
-  return(result)
+  return(day_datetime)
 }
 extract_datetime("Harris","2016-04-05 00:00", "2016-04-05 23:59")
 
@@ -126,7 +126,7 @@ extract_exposure<- function(site, start, end) {
     kefj_datetime >= start_alaska &
     kefj_datetime <= end_alaska
   day_temperature <- kefj_exposure[extract_idx]
-  return(result)
+  return(day_exposure)
 }
 extract_exposure("Harris","2016-04-05 00:00", "2016-04-05 23:59")
 
